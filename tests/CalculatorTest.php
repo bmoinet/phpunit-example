@@ -25,5 +25,8 @@ class CalculatorTest extends TestCase
     {
         $numbers = [3, 7, 6, 1, 5];
         $this->assertEquals(5, $this->calculator->median($numbers));
+
+        $numbers = [3, 7, 6, 1, 5, 9];
+        $this->assertEquals(5.5, $this->calculator->median($numbers));
     }
 }

@@ -16,5 +16,11 @@ composer install
 You will then be able to run the unit tests with PHPUnit 10 using:
 
 ```
-./vendor/bin/phpunit
+./vendor/bin/phpunit --no-coverage
+```
+
+For code coverage, run PHPUnit using:
+
+```
+XDEBUG_MODE=coverage ./vendor/bin/phpunit
 ```
